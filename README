@@ -1,0 +1,21 @@
+#  SMS Verification Microservice (Node.js + TS + Redis)
+
+Ushbu loyiha yuqori yuklamali tizimlar uchun mo'ljallangan SMS OTP (One-Time Password) yuborish va tasdiqlash xizmatining backend qismidir.
+
+##  Xususiyatlari
+- **OTP Caching:** Kodlar Redis-da TTL (Time To Live) bilan saqlanadi.
+- **Rate Limiting:** Bir raqamga ketma-ket SMS yuborishni cheklash (Anti-spam).
+- **Security:** Kod tasdiqlangach darhol keshdan o'chiriladi.
+- **TypeScript:** To'liq tipizatsiya va xavfsiz kod.
+
+##  Texnologiyalar
+- **Backend:** Node.js, Express.js
+- **Language:** TypeScript
+- **Database:** Redis (Caching layer)
+- **Containerization:** Docker & Docker Compose
+
+##  Ishga tushirish
+1. Loyihani klon qiling.
+2. Quyidagi buyruqni bering:
+   ```bash
+   docker-compose up --build
